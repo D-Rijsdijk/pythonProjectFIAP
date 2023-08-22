@@ -60,3 +60,14 @@ for elemento in inventario:
     print("Valor........: ", elemento[1])
     print("Serial.......: ", elemento[2])
     print("Departamento.: ", elemento[3])
+
+    # Inicializa uma lista vazia chamada "valores" para armazenar os valores dos equipamentos
+    valores = []
+
+    # Itera sobre cada "elemento" na lista "inventario" e adiciona o valor do equipamento (elemento[1]) à lista "valores"
+    for elemento in inventario:
+      valores.append(elemento[1])
+    if len(valores) > 0:
+      print("O equipamento mais caro custa: ", max(valores))
+      print("O equipamento mais barato custa: ", min(valores))
+      print("O total de equipamentos é de: ", sum(valores))
